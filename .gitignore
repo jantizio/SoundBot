@@ -105,3 +105,7 @@ dist
 
 # extension that i use for old file
 *.sos
+
+# i don't want my sounds to be public
+sounds/*
+!sounds/.gitkeep

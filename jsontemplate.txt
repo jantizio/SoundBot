@@ -1,0 +1,6527 @@
+{
+
+	"activePlayer": {
+
+		"abilities": {
+
+			"E": {
+
+				"abilityLevel": 5,
+
+				"displayName": "Arresto",
+
+				"id": "DariusAxeGrabCone",
+
+				"rawDescription": "GeneratedTip_Spell_DariusAxeGrabCone_Description",
+
+				"rawDisplayName": "GeneratedTip_Spell_DariusAxeGrabCone_DisplayName"
+
+			},
+
+			"Passive": {
+
+				"displayName": "Emorragia",
+
+				"id": "DariusHemoMarker",
+
+				"rawDescription": "GeneratedTip_Passive_DariusHemoMarker_Description",
+
+				"rawDisplayName": "GeneratedTip_Passive_DariusHemoMarker_DisplayName"
+
+			},
+
+			"Q": {
+
+				"abilityLevel": 5,
+
+				"displayName": "Decimare",
+
+				"id": "DariusCleave",
+
+				"rawDescription": "GeneratedTip_Spell_DariusCleave_Description",
+
+				"rawDisplayName": "GeneratedTip_Spell_DariusCleave_DisplayName"
+
+			},
+
+			"R": {
+
+				"abilityLevel": 3,
+
+				"displayName": "Ghigliottina di Noxus",
+
+				"id": "DariusExecute",
+
+				"rawDescription": "GeneratedTip_Spell_DariusExecute_Description",
+
+				"rawDisplayName": "GeneratedTip_Spell_DariusExecute_DisplayName"
+
+			},
+
+			"W": {
+
+				"abilityLevel": 5,
+
+				"displayName": "Colpo mutilante",
+
+				"id": "DariusNoxianTacticsONH",
+
+				"rawDescription": "GeneratedTip_Spell_DariusNoxianTacticsONH_Description",
+
+				"rawDisplayName": "GeneratedTip_Spell_DariusNoxianTacticsONH_DisplayName"
+
+			}
+
+		},
+
+		"championStats": {
+
+			"abilityPower": 0.0,
+
+			"armor": 153.0,
+
+			"armorPenetrationFlat": 0.0,
+
+			"armorPenetrationPercent": 0.6499999761581421,
+
+			"attackDamage": 316.57598876953127,
+
+			"attackRange": 175.0,
+
+			"attackSpeed": 0.90625,
+
+			"bonusArmorPenetrationPercent": 1.0,
+
+			"bonusMagicPenetrationPercent": 1.0,
+
+			"cooldownReduction": 0.0,
+
+			"critChance": 0.0,
+
+			"critDamage": 175.0,
+
+			"currentHealth": 3253.831298828125,
+
+			"healthRegenRate": 13.075000762939454,
+
+			"lifeSteal": 0.0,
+
+			"magicLethality": 0.0,
+
+			"magicPenetrationFlat": 0.0,
+
+			"magicPenetrationPercent": 1.0,
+
+			"magicResist": 153.25,
+
+			"maxHealth": 4182.0,
+
+			"moveSpeed": 374.0,
+
+			"physicalLethality": 18.0,
+
+			"resourceMax": 1240.5001220703126,
+
+			"resourceRegenRate": 2.510000228881836,
+
+			"resourceType": "MANA",
+
+			"resourceValue": 604.90576171875,
+
+			"spellVamp": 0.0,
+
+			"tenacity": 0.0
+
+		},
+
+		"currentGold": 10065.287109375,
+
+		"fullRunes": {
+
+			"generalRunes": [
+
+				{
+
+					"displayName": "Conquistatore",
+
+					"id": 8010,
+
+					"rawDescription": "perk_tooltip_Conqueror",
+
+					"rawDisplayName": "perk_displayname_Conqueror"
+
+				},
+
+				{
+
+					"displayName": "Trionfo",
+
+					"id": 9111,
+
+					"rawDescription": "perk_tooltip_9111",
+
+					"rawDisplayName": "perk_displayname_9111"
+
+				},
+
+				{
+
+					"displayName": "Leggenda: Alacrità",
+
+					"id": 9104,
+
+					"rawDescription": "perk_tooltip_9104",
+
+					"rawDisplayName": "perk_displayname_9104"
+
+				},
+
+				{
+
+					"displayName": "L'ultima sfida",
+
+					"id": 8299,
+
+					"rawDescription": "perk_tooltip_8234",
+
+					"rawDisplayName": "perk_displayname_8234"
+
+				},
+
+				{
+
+					"displayName": "Impatto improvviso",
+
+					"id": 8143,
+
+					"rawDescription": "perk_tooltip_SuddenImpact",
+
+					"rawDisplayName": "perk_displayname_SuddenImpact"
+
+				},
+
+				{
+
+					"displayName": "Cacciatore famelico",
+
+					"id": 8135,
+
+					"rawDescription": "perk_tooltip_RavenousHunter",
+
+					"rawDisplayName": "perk_displayname_RavenousHunter"
+
+				}
+
+			],
+
+			"keystone": {
+
+				"displayName": "Conquistatore",
+
+				"id": 8010,
+
+				"rawDescription": "perk_tooltip_Conqueror",
+
+				"rawDisplayName": "perk_displayname_Conqueror"
+
+			},
+
+			"primaryRuneTree": {
+
+				"displayName": "Precisione",
+
+				"id": 8000,
+
+				"rawDescription": "perkstyle_tooltip_7201",
+
+				"rawDisplayName": "perkstyle_displayname_7201"
+
+			},
+
+			"secondaryRuneTree": {
+
+				"displayName": "Dominazione",
+
+				"id": 8100,
+
+				"rawDescription": "perkstyle_tooltip_7200",
+
+				"rawDisplayName": "perkstyle_displayname_7200"
+
+			},
+
+			"statRunes": [
+
+				{
+
+					"id": 5005,
+
+					"rawDescription": "perk_tooltip_StatModAttackSpeed"
+
+				},
+
+				{
+
+					"id": 5008,
+
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+
+				},
+
+				{
+
+					"id": 5002,
+
+					"rawDescription": "perk_tooltip_StatModArmor"
+
+				}
+
+			]
+
+		},
+
+		"level": 18,
+
+		"summonerName": "jantizio"
+
+	},
+
+	"allPlayers": [
+
+		{
+
+			"championName": "Darius",
+
+			"isBot": false,
+
+			"isDead": false,
+
+			"items": [
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Corazza spirituale",
+
+					"itemID": 3065,
+
+					"price": 850,
+
+					"rawDescription": "GeneratedTip_Item_3065_Description",
+
+					"rawDisplayName": "Item_3065_Name",
+
+					"slot": 0
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Lama crepuscolare di Draktharr",
+
+					"itemID": 6691,
+
+					"price": 1000,
+
+					"rawDescription": "GeneratedTip_Item_6691_Description",
+
+					"rawDisplayName": "Item_6691_Name",
+
+					"slot": 1
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Forza della natura",
+
+					"itemID": 4401,
+
+					"price": 800,
+
+					"rawDescription": "GeneratedTip_Item_4401_Description",
+
+					"rawDisplayName": "Item_4401_Name",
+
+					"slot": 2
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Mannaia oscura",
+
+					"itemID": 3071,
+
+					"price": 1050,
+
+					"rawDescription": "GeneratedTip_Item_3071_Description",
+
+					"rawDisplayName": "Item_3071_Name",
+
+					"slot": 3
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Pegno di Sterak",
+
+					"itemID": 3053,
+
+					"price": 725,
+
+					"rawDescription": "GeneratedTip_Item_3053_Description",
+
+					"rawDisplayName": "Item_3053_Name",
+
+					"slot": 4
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Corazza dell'uomo morto",
+
+					"itemID": 3742,
+
+					"price": 900,
+
+					"rawDescription": "GeneratedTip_Item_3742_Description",
+
+					"rawDisplayName": "Item_3742_Name",
+
+					"slot": 5
+
+				},
+
+				{
+
+					"canUse": true,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Lume invisibile",
+
+					"itemID": 3340,
+
+					"price": 0,
+
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+
+					"rawDisplayName": "Item_3340_Name",
+
+					"slot": 6
+
+				}
+
+			],
+
+			"level": 18,
+
+			"position": "",
+
+			"rawChampionName": "game_character_displayname_Darius",
+
+			"rawSkinName": "game_character_skin_displayname_Darius_2",
+
+			"respawnTimer": 0.0,
+
+			"runes": {
+
+				"keystone": {
+
+					"displayName": "Conquistatore",
+
+					"id": 8010,
+
+					"rawDescription": "perk_tooltip_Conqueror",
+
+					"rawDisplayName": "perk_displayname_Conqueror"
+
+				},
+
+				"primaryRuneTree": {
+
+					"displayName": "Precisione",
+
+					"id": 8000,
+
+					"rawDescription": "perkstyle_tooltip_7201",
+
+					"rawDisplayName": "perkstyle_displayname_7201"
+
+				},
+
+				"secondaryRuneTree": {
+
+					"displayName": "Dominazione",
+
+					"id": 8100,
+
+					"rawDescription": "perkstyle_tooltip_7200",
+
+					"rawDisplayName": "perkstyle_displayname_7200"
+
+				}
+
+			},
+
+			"scores": {
+
+				"assists": 7,
+
+				"creepScore": 260,
+
+				"deaths": 6,
+
+				"kills": 57,
+
+				"wardScore": 23.476062774658204
+
+			},
+
+			"skinID": 2,
+
+			"skinName": "Darius della Bioforgia",
+
+			"summonerName": "jantizio",
+
+			"summonerSpells": {
+
+				"summonerSpellOne": {
+
+					"displayName": "Ustione",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+
+				},
+
+				"summonerSpellTwo": {
+
+					"displayName": "Flash",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+
+				}
+
+			},
+
+			"team": "ORDER"
+
+		},
+
+		{
+
+			"championName": "Tristana",
+
+			"isBot": true,
+
+			"isDead": false,
+
+			"items": [
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Armatura di stoffa",
+
+					"itemID": 1029,
+
+					"price": 300,
+
+					"rawDescription": "GeneratedTip_Item_1029_Description",
+
+					"rawDisplayName": "Item_1029_Name",
+
+					"slot": 0
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Gambali del berserker",
+
+					"itemID": 3006,
+
+					"price": 500,
+
+					"rawDescription": "GeneratedTip_Item_3006_Description",
+
+					"rawDisplayName": "Item_3006_Name",
+
+					"slot": 1
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Uccisore di Kraken",
+
+					"itemID": 6672,
+
+					"price": 625,
+
+					"rawDescription": "GeneratedTip_Item_6672_Description",
+
+					"rawDisplayName": "Item_6672_Name",
+
+					"slot": 2
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Danzatore fantasma",
+
+					"itemID": 3046,
+
+					"price": 850,
+
+					"rawDescription": "GeneratedTip_Item_3046_Description",
+
+					"rawDisplayName": "Item_3046_Name",
+
+					"slot": 3
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Archibugio a ripetizione",
+
+					"itemID": 3094,
+
+					"price": 750,
+
+					"rawDescription": "GeneratedTip_Item_3094_Description",
+
+					"rawDisplayName": "Item_3094_Name",
+
+					"slot": 4
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Bramasangue",
+
+					"itemID": 3072,
+
+					"price": 600,
+
+					"rawDescription": "GeneratedTip_Item_3072_Description",
+
+					"rawDisplayName": "Item_3072_Name",
+
+					"slot": 5
+
+				},
+
+				{
+
+					"canUse": true,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Lume invisibile",
+
+					"itemID": 3340,
+
+					"price": 0,
+
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+
+					"rawDisplayName": "Item_3340_Name",
+
+					"slot": 6
+
+				}
+
+			],
+
+			"level": 17,
+
+			"position": "",
+
+			"rawChampionName": "game_character_displayname_Tristana",
+
+			"respawnTimer": 0.0,
+
+			"runes": {
+
+				"keystone": {
+
+					"displayName": "Attacco sostenuto",
+
+					"id": 8005,
+
+					"rawDescription": "perk_tooltip_PressTheAttack",
+
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+
+				},
+
+				"primaryRuneTree": {
+
+					"displayName": "Precisione",
+
+					"id": 8000,
+
+					"rawDescription": "perkstyle_tooltip_7201",
+
+					"rawDisplayName": "perkstyle_displayname_7201"
+
+				},
+
+				"secondaryRuneTree": {
+
+					"displayName": "Stregoneria",
+
+					"id": 8200,
+
+					"rawDescription": "perkstyle_tooltip_7202",
+
+					"rawDisplayName": "perkstyle_displayname_7202"
+
+				}
+
+			},
+
+			"scores": {
+
+				"assists": 6,
+
+				"creepScore": 140,
+
+				"deaths": 14,
+
+				"kills": 10,
+
+				"wardScore": 0.0
+
+			},
+
+			"skinID": 0,
+
+			"summonerName": "Bot Tristana",
+
+			"summonerSpells": {
+
+				"summonerSpellOne": {
+
+					"displayName": "Ustione",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+
+				},
+
+				"summonerSpellTwo": {
+
+					"displayName": "Sfinimento",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerExhaust_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerExhaust_DisplayName"
+
+				}
+
+			},
+
+			"team": "ORDER"
+
+		},
+
+		{
+
+			"championName": "Shen",
+
+			"isBot": true,
+
+			"isDead": false,
+
+			"items": [
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Armatura di stoffa",
+
+					"itemID": 1029,
+
+					"price": 300,
+
+					"rawDescription": "GeneratedTip_Item_1029_Description",
+
+					"rawDisplayName": "Item_1029_Name",
+
+					"slot": 0
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Calzari di Mercurio",
+
+					"itemID": 3111,
+
+					"price": 350,
+
+					"rawDescription": "GeneratedTip_Item_3111_Description",
+
+					"rawDisplayName": "Item_3111_Name",
+
+					"slot": 1
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Egida del Sole",
+
+					"itemID": 3068,
+
+					"price": 600,
+
+					"rawDescription": "GeneratedTip_Item_3068_Description",
+
+					"rawDisplayName": "Item_3068_Name",
+
+					"slot": 2
+
+				},
+
+				{
+
+					"canUse": true,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Orgoglio di Randuin",
+
+					"itemID": 3143,
+
+					"price": 600,
+
+					"rawDescription": "GeneratedTip_Item_3143_Description",
+
+					"rawDisplayName": "Item_3143_Name",
+
+					"slot": 3
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Cappuccio spettrale",
+
+					"itemID": 3211,
+
+					"price": 400,
+
+					"rawDescription": "GeneratedTip_Item_3211_Description",
+
+					"rawDisplayName": "Item_3211_Name",
+
+					"slot": 4
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Armatura di Warmog",
+
+					"itemID": 3083,
+
+					"price": 650,
+
+					"rawDescription": "GeneratedTip_Item_3083_Description",
+
+					"rawDisplayName": "Item_3083_Name",
+
+					"slot": 5
+
+				},
+
+				{
+
+					"canUse": true,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Lume invisibile",
+
+					"itemID": 3340,
+
+					"price": 0,
+
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+
+					"rawDisplayName": "Item_3340_Name",
+
+					"slot": 6
+
+				}
+
+			],
+
+			"level": 18,
+
+			"position": "",
+
+			"rawChampionName": "game_character_displayname_Shen",
+
+			"respawnTimer": 0.0,
+
+			"runes": {
+
+				"keystone": {
+
+					"displayName": "Presa dell'immortale",
+
+					"id": 8437,
+
+					"rawDescription": "perk_tooltip_GraspOfTheUndying",
+
+					"rawDisplayName": "perk_displayname_GraspOfTheUndying"
+
+				},
+
+				"primaryRuneTree": {
+
+					"displayName": "Determinazione",
+
+					"id": 8400,
+
+					"rawDescription": "perkstyle_tooltip_7204",
+
+					"rawDisplayName": "perkstyle_displayname_7204"
+
+				},
+
+				"secondaryRuneTree": {
+
+					"displayName": "Stregoneria",
+
+					"id": 8200,
+
+					"rawDescription": "perkstyle_tooltip_7202",
+
+					"rawDisplayName": "perkstyle_displayname_7202"
+
+				}
+
+			},
+
+			"scores": {
+
+				"assists": 22,
+
+				"creepScore": 90,
+
+				"deaths": 9,
+
+				"kills": 4,
+
+				"wardScore": 0.0
+
+			},
+
+			"skinID": 0,
+
+			"summonerName": "Bot Shen",
+
+			"summonerSpells": {
+
+				"summonerSpellOne": {
+
+					"displayName": "Guarigione",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+
+				},
+
+				"summonerSpellTwo": {
+
+					"displayName": "Spettralità",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerHaste_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHaste_DisplayName"
+
+				}
+
+			},
+
+			"team": "ORDER"
+
+		},
+
+		{
+
+			"championName": "Kog'Maw",
+
+			"isBot": true,
+
+			"isDead": false,
+
+			"items": [
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Cotta di maglia",
+
+					"itemID": 1031,
+
+					"price": 500,
+
+					"rawDescription": "GeneratedTip_Item_1031_Description",
+
+					"rawDisplayName": "Item_1031_Name",
+
+					"slot": 0
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Gambali del berserker",
+
+					"itemID": 3006,
+
+					"price": 500,
+
+					"rawDescription": "GeneratedTip_Item_3006_Description",
+
+					"rawDisplayName": "Item_3006_Name",
+
+					"slot": 1
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Uccisore di Kraken",
+
+					"itemID": 6672,
+
+					"price": 625,
+
+					"rawDescription": "GeneratedTip_Item_6672_Description",
+
+					"rawDisplayName": "Item_6672_Name",
+
+					"slot": 2
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Danzatore fantasma",
+
+					"itemID": 3046,
+
+					"price": 850,
+
+					"rawDescription": "GeneratedTip_Item_3046_Description",
+
+					"rawDisplayName": "Item_3046_Name",
+
+					"slot": 3
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Archibugio a ripetizione",
+
+					"itemID": 3094,
+
+					"price": 750,
+
+					"rawDescription": "GeneratedTip_Item_3094_Description",
+
+					"rawDisplayName": "Item_3094_Name",
+
+					"slot": 4
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Bramasangue",
+
+					"itemID": 3072,
+
+					"price": 600,
+
+					"rawDescription": "GeneratedTip_Item_3072_Description",
+
+					"rawDisplayName": "Item_3072_Name",
+
+					"slot": 5
+
+				},
+
+				{
+
+					"canUse": true,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Lume invisibile",
+
+					"itemID": 3340,
+
+					"price": 0,
+
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+
+					"rawDisplayName": "Item_3340_Name",
+
+					"slot": 6
+
+				}
+
+			],
+
+			"level": 18,
+
+			"position": "",
+
+			"rawChampionName": "game_character_displayname_KogMaw",
+
+			"respawnTimer": 0.0,
+
+			"runes": {
+
+				"keystone": {
+
+					"displayName": "Attacco sostenuto",
+
+					"id": 8005,
+
+					"rawDescription": "perk_tooltip_PressTheAttack",
+
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+
+				},
+
+				"primaryRuneTree": {
+
+					"displayName": "Precisione",
+
+					"id": 8000,
+
+					"rawDescription": "perkstyle_tooltip_7201",
+
+					"rawDisplayName": "perkstyle_displayname_7201"
+
+				},
+
+				"secondaryRuneTree": {
+
+					"displayName": "Stregoneria",
+
+					"id": 8200,
+
+					"rawDescription": "perkstyle_tooltip_7202",
+
+					"rawDisplayName": "perkstyle_displayname_7202"
+
+				}
+
+			},
+
+			"scores": {
+
+				"assists": 13,
+
+				"creepScore": 200,
+
+				"deaths": 11,
+
+				"kills": 8,
+
+				"wardScore": 0.0
+
+			},
+
+			"skinID": 0,
+
+			"summonerName": "Bot Kog'Maw",
+
+			"summonerSpells": {
+
+				"summonerSpellOne": {
+
+					"displayName": "Purificazione",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerBoost_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerBoost_DisplayName"
+
+				},
+
+				"summonerSpellTwo": {
+
+					"displayName": "Ustione",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+
+				}
+
+			},
+
+			"team": "ORDER"
+
+		},
+
+		{
+
+			"championName": "Annie",
+
+			"isBot": true,
+
+			"isDead": false,
+
+			"items": [
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Anello di Doran",
+
+					"itemID": 1056,
+
+					"price": 400,
+
+					"rawDescription": "GeneratedTip_Item_1056_Description",
+
+					"rawDisplayName": "Item_1056_Name",
+
+					"slot": 0
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Stivali",
+
+					"itemID": 1001,
+
+					"price": 300,
+
+					"rawDescription": "GeneratedTip_Item_1001_Description",
+
+					"rawDisplayName": "Item_1001_Name",
+
+					"slot": 1
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Sagomalanda",
+
+					"itemID": 4633,
+
+					"price": 1050,
+
+					"rawDescription": "GeneratedTip_Item_4633_Description",
+
+					"rawDisplayName": "Item_4633_Name",
+
+					"slot": 2
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Abbraccio demoniaco",
+
+					"itemID": 4637,
+
+					"price": 815,
+
+					"rawDescription": "GeneratedTip_Item_4637_Description",
+
+					"rawDisplayName": "Item_4637_Name",
+
+					"slot": 3
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Velo della Banshee",
+
+					"itemID": 3102,
+
+					"price": 700,
+
+					"rawDescription": "GeneratedTip_Item_3102_Description",
+
+					"rawDisplayName": "Item_3102_Name",
+
+					"slot": 4
+
+				},
+
+				{
+
+					"canUse": true,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Lume invisibile",
+
+					"itemID": 3340,
+
+					"price": 0,
+
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+
+					"rawDisplayName": "Item_3340_Name",
+
+					"slot": 6
+
+				}
+
+			],
+
+			"level": 16,
+
+			"position": "",
+
+			"rawChampionName": "game_character_displayname_Annie",
+
+			"respawnTimer": 0.0,
+
+			"runes": {
+
+				"keystone": {
+
+					"displayName": "Cometa arcana",
+
+					"id": 8229,
+
+					"rawDescription": "perk_tooltip_ArcaneComet",
+
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+
+				},
+
+				"primaryRuneTree": {
+
+					"displayName": "Stregoneria",
+
+					"id": 8200,
+
+					"rawDescription": "perkstyle_tooltip_7202",
+
+					"rawDisplayName": "perkstyle_displayname_7202"
+
+				},
+
+				"secondaryRuneTree": {
+
+					"displayName": "Dominazione",
+
+					"id": 8100,
+
+					"rawDescription": "perkstyle_tooltip_7200",
+
+					"rawDisplayName": "perkstyle_displayname_7200"
+
+				}
+
+			},
+
+			"scores": {
+
+				"assists": 7,
+
+				"creepScore": 70,
+
+				"deaths": 14,
+
+				"kills": 3,
+
+				"wardScore": 0.0
+
+			},
+
+			"skinID": 0,
+
+			"summonerName": "Bot Annie",
+
+			"summonerSpells": {
+
+				"summonerSpellOne": {
+
+					"displayName": "Ustione",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+
+				},
+
+				"summonerSpellTwo": {
+
+					"displayName": "Sfinimento",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerExhaust_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerExhaust_DisplayName"
+
+				}
+
+			},
+
+			"team": "ORDER"
+
+		},
+
+		{
+
+			"championName": "Kindred",
+
+			"isBot": false,
+
+			"isDead": true,
+
+			"items": [
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Uccisore di Kraken",
+
+					"itemID": 6672,
+
+					"price": 625,
+
+					"rawDescription": "GeneratedTip_Item_6672_Description",
+
+					"rawDisplayName": "Item_6672_Name",
+
+					"slot": 0
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Bramasangue",
+
+					"itemID": 3072,
+
+					"price": 600,
+
+					"rawDescription": "GeneratedTip_Item_3072_Description",
+
+					"rawDisplayName": "Item_3072_Name",
+
+					"slot": 1
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Gambali del berserker",
+
+					"itemID": 3006,
+
+					"price": 500,
+
+					"rawDescription": "GeneratedTip_Item_3006_Description",
+
+					"rawDisplayName": "Item_3006_Name",
+
+					"slot": 2
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Rasoio della tempesta",
+
+					"itemID": 3095,
+
+					"price": 100,
+
+					"rawDescription": "GeneratedTip_Item_3095_Description",
+
+					"rawDisplayName": "Item_3095_Name",
+
+					"slot": 3
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Archibugio a ripetizione",
+
+					"itemID": 3094,
+
+					"price": 750,
+
+					"rawDescription": "GeneratedTip_Item_3094_Description",
+
+					"rawDisplayName": "Item_3094_Name",
+
+					"slot": 4
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Angelo custode",
+
+					"itemID": 3026,
+
+					"price": 50,
+
+					"rawDescription": "GeneratedTip_Item_3026_Description",
+
+					"rawDisplayName": "Item_3026_Name",
+
+					"slot": 5
+
+				},
+
+				{
+
+					"canUse": true,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Lume invisibile",
+
+					"itemID": 3340,
+
+					"price": 0,
+
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+
+					"rawDisplayName": "Item_3340_Name",
+
+					"slot": 6
+
+				}
+
+			],
+
+			"level": 18,
+
+			"position": "",
+
+			"rawChampionName": "game_character_displayname_Kindred",
+
+			"respawnTimer": 40.763771057128909,
+
+			"runes": {
+
+				"keystone": {
+
+					"displayName": "Attacco sostenuto",
+
+					"id": 8005,
+
+					"rawDescription": "perk_tooltip_PressTheAttack",
+
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+
+				},
+
+				"primaryRuneTree": {
+
+					"displayName": "Precisione",
+
+					"id": 8000,
+
+					"rawDescription": "perkstyle_tooltip_7201",
+
+					"rawDisplayName": "perkstyle_displayname_7201"
+
+				},
+
+				"secondaryRuneTree": {
+
+					"displayName": "Dominazione",
+
+					"id": 8100,
+
+					"rawDescription": "perkstyle_tooltip_7200",
+
+					"rawDisplayName": "perkstyle_displayname_7200"
+
+				}
+
+			},
+
+			"scores": {
+
+				"assists": 5,
+
+				"creepScore": 190,
+
+				"deaths": 12,
+
+				"kills": 21,
+
+				"wardScore": 29.037437438964845
+
+			},
+
+			"skinID": 0,
+
+			"summonerName": "EnderArcher21",
+
+			"summonerSpells": {
+
+				"summonerSpellOne": {
+
+					"displayName": "Flash",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+
+				},
+
+				"summonerSpellTwo": {
+
+					"displayName": "Punizione di sfida",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_S5_SummonerSmiteDuel_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_S5_SummonerSmiteDuel_DisplayName"
+
+				}
+
+			},
+
+			"team": "CHAOS"
+
+		},
+
+		{
+
+			"championName": "Sivir",
+
+			"isBot": true,
+
+			"isDead": true,
+
+			"items": [
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Angelo custode",
+
+					"itemID": 3026,
+
+					"price": 50,
+
+					"rawDescription": "GeneratedTip_Item_3026_Description",
+
+					"rawDisplayName": "Item_3026_Name",
+
+					"slot": 0
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Gambali del berserker",
+
+					"itemID": 3006,
+
+					"price": 500,
+
+					"rawDescription": "GeneratedTip_Item_3006_Description",
+
+					"rawDisplayName": "Item_3006_Name",
+
+					"slot": 1
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Uccisore di Kraken",
+
+					"itemID": 6672,
+
+					"price": 625,
+
+					"rawDescription": "GeneratedTip_Item_6672_Description",
+
+					"rawDisplayName": "Item_6672_Name",
+
+					"slot": 2
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Danzatore fantasma",
+
+					"itemID": 3046,
+
+					"price": 850,
+
+					"rawDescription": "GeneratedTip_Item_3046_Description",
+
+					"rawDisplayName": "Item_3046_Name",
+
+					"slot": 3
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Archibugio a ripetizione",
+
+					"itemID": 3094,
+
+					"price": 750,
+
+					"rawDescription": "GeneratedTip_Item_3094_Description",
+
+					"rawDisplayName": "Item_3094_Name",
+
+					"slot": 4
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Bramasangue",
+
+					"itemID": 3072,
+
+					"price": 600,
+
+					"rawDescription": "GeneratedTip_Item_3072_Description",
+
+					"rawDisplayName": "Item_3072_Name",
+
+					"slot": 5
+
+				},
+
+				{
+
+					"canUse": true,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Lume invisibile",
+
+					"itemID": 3340,
+
+					"price": 0,
+
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+
+					"rawDisplayName": "Item_3340_Name",
+
+					"slot": 6
+
+				}
+
+			],
+
+			"level": 18,
+
+			"position": "",
+
+			"rawChampionName": "game_character_displayname_Sivir",
+
+			"respawnTimer": 14.195457458496094,
+
+			"runes": {
+
+				"keystone": {
+
+					"displayName": "Attacco sostenuto",
+
+					"id": 8005,
+
+					"rawDescription": "perk_tooltip_PressTheAttack",
+
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+
+				},
+
+				"primaryRuneTree": {
+
+					"displayName": "Precisione",
+
+					"id": 8000,
+
+					"rawDescription": "perkstyle_tooltip_7201",
+
+					"rawDisplayName": "perkstyle_displayname_7201"
+
+				},
+
+				"secondaryRuneTree": {
+
+					"displayName": "Stregoneria",
+
+					"id": 8200,
+
+					"rawDescription": "perkstyle_tooltip_7202",
+
+					"rawDisplayName": "perkstyle_displayname_7202"
+
+				}
+
+			},
+
+			"scores": {
+
+				"assists": 12,
+
+				"creepScore": 210,
+
+				"deaths": 14,
+
+				"kills": 12,
+
+				"wardScore": 0.0
+
+			},
+
+			"skinID": 0,
+
+			"summonerName": "Bot Sivir",
+
+			"summonerSpells": {
+
+				"summonerSpellOne": {
+
+					"displayName": "Ustione",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+
+				},
+
+				"summonerSpellTwo": {
+
+					"displayName": "Sfinimento",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerExhaust_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerExhaust_DisplayName"
+
+				}
+
+			},
+
+			"team": "CHAOS"
+
+		},
+
+		{
+
+			"championName": "Morgana",
+
+			"isBot": true,
+
+			"isDead": true,
+
+			"items": [
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Anello di Doran",
+
+					"itemID": 1056,
+
+					"price": 400,
+
+					"rawDescription": "GeneratedTip_Item_1056_Description",
+
+					"rawDisplayName": "Item_1056_Name",
+
+					"slot": 0
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Stivali",
+
+					"itemID": 1001,
+
+					"price": 300,
+
+					"rawDescription": "GeneratedTip_Item_1001_Description",
+
+					"rawDisplayName": "Item_1001_Name",
+
+					"slot": 1
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Sagomalanda",
+
+					"itemID": 4633,
+
+					"price": 1050,
+
+					"rawDescription": "GeneratedTip_Item_4633_Description",
+
+					"rawDisplayName": "Item_4633_Name",
+
+					"slot": 2
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Abbraccio demoniaco",
+
+					"itemID": 4637,
+
+					"price": 815,
+
+					"rawDescription": "GeneratedTip_Item_4637_Description",
+
+					"rawDisplayName": "Item_4637_Name",
+
+					"slot": 3
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Velo della Banshee",
+
+					"itemID": 3102,
+
+					"price": 700,
+
+					"rawDescription": "GeneratedTip_Item_3102_Description",
+
+					"rawDisplayName": "Item_3102_Name",
+
+					"slot": 4
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Copricapo di Rabadon",
+
+					"itemID": 3089,
+
+					"price": 1300,
+
+					"rawDescription": "GeneratedTip_Item_3089_Description",
+
+					"rawDisplayName": "Item_3089_Name",
+
+					"slot": 5
+
+				},
+
+				{
+
+					"canUse": true,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Lume invisibile",
+
+					"itemID": 3340,
+
+					"price": 0,
+
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+
+					"rawDisplayName": "Item_3340_Name",
+
+					"slot": 6
+
+				}
+
+			],
+
+			"level": 18,
+
+			"position": "",
+
+			"rawChampionName": "game_character_displayname_Morgana",
+
+			"respawnTimer": 40.89787292480469,
+
+			"runes": {
+
+				"keystone": {
+
+					"displayName": "Cometa arcana",
+
+					"id": 8229,
+
+					"rawDescription": "perk_tooltip_ArcaneComet",
+
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+
+				},
+
+				"primaryRuneTree": {
+
+					"displayName": "Stregoneria",
+
+					"id": 8200,
+
+					"rawDescription": "perkstyle_tooltip_7202",
+
+					"rawDisplayName": "perkstyle_displayname_7202"
+
+				},
+
+				"secondaryRuneTree": {
+
+					"displayName": "Dominazione",
+
+					"id": 8100,
+
+					"rawDescription": "perkstyle_tooltip_7200",
+
+					"rawDisplayName": "perkstyle_displayname_7200"
+
+				}
+
+			},
+
+			"scores": {
+
+				"assists": 15,
+
+				"creepScore": 140,
+
+				"deaths": 21,
+
+				"kills": 10,
+
+				"wardScore": 0.0
+
+			},
+
+			"skinID": 0,
+
+			"summonerName": "Bot Morgana",
+
+			"summonerSpells": {
+
+				"summonerSpellOne": {
+
+					"displayName": "Ustione",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+
+				},
+
+				"summonerSpellTwo": {
+
+					"displayName": "Sfinimento",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerExhaust_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerExhaust_DisplayName"
+
+				}
+
+			},
+
+			"team": "CHAOS"
+
+		},
+
+		{
+
+			"championName": "Karthus",
+
+			"isBot": true,
+
+			"isDead": true,
+
+			"items": [
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Anello di Doran",
+
+					"itemID": 1056,
+
+					"price": 400,
+
+					"rawDescription": "GeneratedTip_Item_1056_Description",
+
+					"rawDisplayName": "Item_1056_Name",
+
+					"slot": 0
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Calzari del mago",
+
+					"itemID": 3020,
+
+					"price": 800,
+
+					"rawDescription": "GeneratedTip_Item_3020_Description",
+
+					"rawDisplayName": "Item_3020_Name",
+
+					"slot": 1
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Tempesta di Luden",
+
+					"itemID": 6655,
+
+					"price": 1250,
+
+					"rawDescription": "GeneratedTip_Item_6655_Description",
+
+					"rawDisplayName": "Item_6655_Name",
+
+					"slot": 2
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Abbraccio demoniaco",
+
+					"itemID": 4637,
+
+					"price": 815,
+
+					"rawDescription": "GeneratedTip_Item_4637_Description",
+
+					"rawDisplayName": "Item_4637_Name",
+
+					"slot": 3
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Velo della Banshee",
+
+					"itemID": 3102,
+
+					"price": 700,
+
+					"rawDescription": "GeneratedTip_Item_3102_Description",
+
+					"rawDisplayName": "Item_3102_Name",
+
+					"slot": 4
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Bastone colossale",
+
+					"itemID": 1058,
+
+					"price": 1250,
+
+					"rawDescription": "GeneratedTip_Item_1058_Description",
+
+					"rawDisplayName": "Item_1058_Name",
+
+					"slot": 5
+
+				},
+
+				{
+
+					"canUse": true,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Lume invisibile",
+
+					"itemID": 3340,
+
+					"price": 0,
+
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+
+					"rawDisplayName": "Item_3340_Name",
+
+					"slot": 6
+
+				}
+
+			],
+
+			"level": 18,
+
+			"position": "",
+
+			"rawChampionName": "game_character_displayname_Karthus",
+
+			"respawnTimer": 11.480918884277344,
+
+			"runes": {
+
+				"keystone": {
+
+					"displayName": "Cometa arcana",
+
+					"id": 8229,
+
+					"rawDescription": "perk_tooltip_ArcaneComet",
+
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+
+				},
+
+				"primaryRuneTree": {
+
+					"displayName": "Stregoneria",
+
+					"id": 8200,
+
+					"rawDescription": "perkstyle_tooltip_7202",
+
+					"rawDisplayName": "perkstyle_displayname_7202"
+
+				},
+
+				"secondaryRuneTree": {
+
+					"displayName": "Dominazione",
+
+					"id": 8100,
+
+					"rawDescription": "perkstyle_tooltip_7200",
+
+					"rawDisplayName": "perkstyle_displayname_7200"
+
+				}
+
+			},
+
+			"scores": {
+
+				"assists": 10,
+
+				"creepScore": 110,
+
+				"deaths": 16,
+
+				"kills": 10,
+
+				"wardScore": 0.0
+
+			},
+
+			"skinID": 0,
+
+			"summonerName": "Bot Karthus",
+
+			"summonerSpells": {
+
+				"summonerSpellOne": {
+
+					"displayName": "Ustione",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+
+				},
+
+				"summonerSpellTwo": {
+
+					"displayName": "Sfinimento",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerExhaust_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerExhaust_DisplayName"
+
+				}
+
+			},
+
+			"team": "CHAOS"
+
+		},
+
+		{
+
+			"championName": "Annie",
+
+			"isBot": true,
+
+			"isDead": true,
+
+			"items": [
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Anello di Doran",
+
+					"itemID": 1056,
+
+					"price": 400,
+
+					"rawDescription": "GeneratedTip_Item_1056_Description",
+
+					"rawDisplayName": "Item_1056_Name",
+
+					"slot": 0
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Stivali",
+
+					"itemID": 1001,
+
+					"price": 300,
+
+					"rawDescription": "GeneratedTip_Item_1001_Description",
+
+					"rawDisplayName": "Item_1001_Name",
+
+					"slot": 1
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Sagomalanda",
+
+					"itemID": 4633,
+
+					"price": 1050,
+
+					"rawDescription": "GeneratedTip_Item_4633_Description",
+
+					"rawDisplayName": "Item_4633_Name",
+
+					"slot": 2
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Abbraccio demoniaco",
+
+					"itemID": 4637,
+
+					"price": 815,
+
+					"rawDescription": "GeneratedTip_Item_4637_Description",
+
+					"rawDisplayName": "Item_4637_Name",
+
+					"slot": 3
+
+				},
+
+				{
+
+					"canUse": false,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Velo della Banshee",
+
+					"itemID": 3102,
+
+					"price": 700,
+
+					"rawDescription": "GeneratedTip_Item_3102_Description",
+
+					"rawDisplayName": "Item_3102_Name",
+
+					"slot": 4
+
+				},
+
+				{
+
+					"canUse": true,
+
+					"consumable": false,
+
+					"count": 1,
+
+					"displayName": "Lume invisibile",
+
+					"itemID": 3340,
+
+					"price": 0,
+
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+
+					"rawDisplayName": "Item_3340_Name",
+
+					"slot": 6
+
+				}
+
+			],
+
+			"level": 17,
+
+			"position": "",
+
+			"rawChampionName": "game_character_displayname_Annie",
+
+			"respawnTimer": 47.75095748901367,
+
+			"runes": {
+
+				"keystone": {
+
+					"displayName": "Cometa arcana",
+
+					"id": 8229,
+
+					"rawDescription": "perk_tooltip_ArcaneComet",
+
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+
+				},
+
+				"primaryRuneTree": {
+
+					"displayName": "Stregoneria",
+
+					"id": 8200,
+
+					"rawDescription": "perkstyle_tooltip_7202",
+
+					"rawDisplayName": "perkstyle_displayname_7202"
+
+				},
+
+				"secondaryRuneTree": {
+
+					"displayName": "Dominazione",
+
+					"id": 8100,
+
+					"rawDescription": "perkstyle_tooltip_7200",
+
+					"rawDisplayName": "perkstyle_displayname_7200"
+
+				}
+
+			},
+
+			"scores": {
+
+				"assists": 7,
+
+				"creepScore": 70,
+
+				"deaths": 14,
+
+				"kills": 3,
+
+				"wardScore": 0.0
+
+			},
+
+			"skinID": 0,
+
+			"summonerName": "Bot Annie",
+
+			"summonerSpells": {
+
+				"summonerSpellOne": {
+
+					"displayName": "Ustione",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+
+				},
+
+				"summonerSpellTwo": {
+
+					"displayName": "Sfinimento",
+
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerExhaust_Description",
+
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerExhaust_DisplayName"
+
+				}
+
+			},
+
+			"team": "CHAOS"
+
+		}
+
+	],
+
+	"events": {
+
+		"Events": [
+
+			{
+
+				"EventID": 0,
+
+				"EventName": "GameStart",
+
+				"EventTime": 0.026384500786662103
+
+			},
+
+			{
+
+				"EventID": 1,
+
+				"EventName": "MinionsSpawning",
+
+				"EventTime": 65.08358001708985
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Tristana"
+
+				],
+
+				"EventID": 2,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 164.79014587402345,
+
+				"KillerName": "Bot Annie",
+
+				"VictimName": "EnderArcher21"
+
+			},
+
+			{
+
+				"EventID": 3,
+
+				"EventName": "FirstBlood",
+
+				"EventTime": 164.79014587402345,
+
+				"Recipient": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"EnderArcher21",
+
+					"Bot Annie"
+
+				],
+
+				"EventID": 4,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 239.708740234375,
+
+				"KillerName": "Bot Morgana",
+
+				"VictimName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 5,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 303.3835754394531,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 6,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 305.385986328125,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"EventID": 7,
+
+				"EventName": "Multikill",
+
+				"EventTime": 305.385986328125,
+
+				"KillStreak": 2,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Annie"
+
+				],
+
+				"EventID": 8,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 349.9100646972656,
+
+				"KillerName": "Bot Morgana",
+
+				"VictimName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Sivir"
+
+				],
+
+				"EventID": 9,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 361.30352783203127,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 10,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 397.5372314453125,
+
+				"KillerName": "Bot Annie",
+
+				"VictimName": "EnderArcher21"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 11,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 404.57708740234377,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 12,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 441.6444396972656,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 13,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 455.0597839355469,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 14,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 495.5103759765625,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Tristana"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Sivir"
+
+				],
+
+				"EventID": 15,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 521.131103515625,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 16,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 558.8519287109375,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 17,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 566.5767211914063,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"EventID": 18,
+
+				"EventName": "Multikill",
+
+				"EventTime": 566.5767211914063,
+
+				"KillStreak": 2,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Sivir"
+
+				],
+
+				"EventID": 19,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 604.23486328125,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 20,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 616.6720581054688,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Annie"
+
+				],
+
+				"EventID": 21,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 618.0570068359375,
+
+				"KillerName": "Bot Tristana",
+
+				"VictimName": "EnderArcher21"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 22,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 621.760009765625,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"EventID": 23,
+
+				"EventName": "Multikill",
+
+				"EventTime": 621.760009765625,
+
+				"KillStreak": 2,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 24,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 730.1430053710938,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 25,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 744.3731079101563,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 26,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 764.30712890625,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Shen"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 27,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 810.3840942382813,
+
+				"KillerName": "Bot Kog'Maw",
+
+				"VictimName": "Bot Karthus"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Annie",
+
+					"Bot Tristana"
+
+				],
+
+				"EventID": 28,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 868.4530639648438,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Sivir"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"jantizio"
+
+				],
+
+				"DragonType": "Earth",
+
+				"EventID": 29,
+
+				"EventName": "DragonKill",
+
+				"EventTime": 889.6057739257813,
+
+				"KillerName": "EnderArcher21",
+
+				"Stolen": "False"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Tristana"
+
+				],
+
+				"EventID": 30,
+
+				"EventName": "TurretKilled",
+
+				"EventTime": 897.1961669921875,
+
+				"KillerName": "Bot Annie",
+
+				"TurretKilled": "Turret_T2_R_03_A"
+
+			},
+
+			{
+
+				"EventID": 31,
+
+				"EventName": "FirstBrick",
+
+				"EventTime": 897.1961669921875,
+
+				"KillerName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Sivir"
+
+				],
+
+				"EventID": 32,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 927.6744995117188,
+
+				"KillerName": "Bot Karthus",
+
+				"VictimName": "Bot Tristana"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 33,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 935.6314697265625,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Karthus"
+
+				],
+
+				"EventID": 34,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 936.7993774414063,
+
+				"KillerName": "Bot Sivir",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 35,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 943.5718994140625,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"EventID": 36,
+
+				"EventName": "Multikill",
+
+				"EventTime": 943.5718994140625,
+
+				"KillStreak": 2,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 37,
+
+				"EventName": "TurretKilled",
+
+				"EventTime": 969.0786743164063,
+
+				"KillerName": "Minion_T100L2S29N0182",
+
+				"TurretKilled": "Turret_T2_L_03_A"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"jantizio"
+
+				],
+
+				"EventID": 38,
+
+				"EventName": "HeraldKill",
+
+				"EventTime": 1007.8487548828125,
+
+				"KillerName": "EnderArcher21",
+
+				"Stolen": "False"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 39,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1014.4207153320313,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Karthus"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Kog'Maw"
+
+				],
+
+				"EventID": 40,
+
+				"EventName": "TurretKilled",
+
+				"EventTime": 1033.5716552734376,
+
+				"KillerName": "Minion_T100L1S32N0202",
+
+				"TurretKilled": "Turret_T2_C_05_A"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 41,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1045.7325439453126,
+
+				"KillerName": "Bot Shen",
+
+				"VictimName": "EnderArcher21"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 42,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1060.996826171875,
+
+				"KillerName": "Bot Sivir",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Annie"
+
+				],
+
+				"EventID": 43,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1095.361572265625,
+
+				"KillerName": "Bot Karthus",
+
+				"VictimName": "Bot Kog'Maw"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 44,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1118.3822021484376,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Karthus"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Morgana"
+
+				],
+
+				"EventID": 45,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1143.3555908203126,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Shen"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 46,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1147.676025390625,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 47,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1163.4407958984376,
+
+				"KillerName": "Bot Sivir",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 48,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1177.971923828125,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Karthus"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Kog'Maw"
+
+				],
+
+				"EventID": 49,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1180.3895263671876,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"EventID": 50,
+
+				"EventName": "Multikill",
+
+				"EventTime": 1180.3895263671876,
+
+				"KillStreak": 2,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"jantizio"
+
+				],
+
+				"EventID": 51,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1184.5430908203126,
+
+				"KillerName": "Bot Kog'Maw",
+
+				"VictimName": "EnderArcher21"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 52,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1218.40771484375,
+
+				"KillerName": "Bot Kog'Maw",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"jantizio"
+
+				],
+
+				"DragonType": "Air",
+
+				"EventID": 53,
+
+				"EventName": "DragonKill",
+
+				"EventTime": 1244.331787109375,
+
+				"KillerName": "EnderArcher21",
+
+				"Stolen": "False"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"EnderArcher21"
+
+				],
+
+				"EventID": 54,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1262.5985107421876,
+
+				"KillerName": "Bot Karthus",
+
+				"VictimName": "Bot Tristana"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Karthus"
+
+				],
+
+				"EventID": 55,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1266.168701171875,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Karthus"
+
+				],
+
+				"EventID": 56,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1272.3746337890626,
+
+				"KillerName": "Bot Morgana",
+
+				"VictimName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 57,
+
+				"EventName": "TurretKilled",
+
+				"EventTime": 1315.4136962890626,
+
+				"KillerName": "Bot Sivir",
+
+				"TurretKilled": "Turret_T1_R_03_A"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 58,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1329.0098876953126,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Shen"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"jantizio"
+
+				],
+
+				"EventID": 59,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1339.752197265625,
+
+				"KillerName": "Bot Kog'Maw",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Kog'Maw"
+
+				],
+
+				"EventID": 60,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1344.85791015625,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Karthus"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Kog'Maw"
+
+				],
+
+				"EventID": 61,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1346.091796875,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"EventID": 62,
+
+				"EventName": "Multikill",
+
+				"EventTime": 1346.091796875,
+
+				"KillStreak": 2,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 63,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1372.783935546875,
+
+				"KillerName": "Bot Sivir",
+
+				"VictimName": "Bot Kog'Maw"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 64,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1402.676513671875,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Tristana"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Morgana",
+
+					"Bot Karthus",
+
+					"Bot Annie"
+
+				],
+
+				"EventID": 65,
+
+				"EventName": "TurretKilled",
+
+				"EventTime": 1420.42724609375,
+
+				"KillerName": "Bot Sivir",
+
+				"TurretKilled": "Turret_T1_C_05_A"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Sivir",
+
+					"Bot Karthus",
+
+					"Bot Annie"
+
+				],
+
+				"EventID": 66,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1425.9664306640626,
+
+				"KillerName": "Bot Morgana",
+
+				"VictimName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Sivir",
+
+					"Bot Karthus",
+
+					"Bot Annie"
+
+				],
+
+				"EventID": 67,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1455.6588134765626,
+
+				"KillerName": "Bot Morgana",
+
+				"VictimName": "Bot Kog'Maw"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Karthus"
+
+				],
+
+				"EventID": 68,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1463.766357421875,
+
+				"KillerName": "Bot Morgana",
+
+				"VictimName": "Bot Tristana"
+
+			},
+
+			{
+
+				"EventID": 69,
+
+				"EventName": "Multikill",
+
+				"EventTime": 1463.766357421875,
+
+				"KillStreak": 2,
+
+				"KillerName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 70,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1475.8441162109376,
+
+				"KillerName": "Bot Annie",
+
+				"VictimName": "EnderArcher21"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 71,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1478.563232421875,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 72,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1504.7576904296876,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 73,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1509.0753173828126,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"EventID": 74,
+
+				"EventName": "Multikill",
+
+				"EventTime": 1509.0753173828126,
+
+				"KillStreak": 2,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 75,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1511.8607177734376,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Karthus"
+
+			},
+
+			{
+
+				"EventID": 76,
+
+				"EventName": "Multikill",
+
+				"EventTime": 1511.8607177734376,
+
+				"KillStreak": 3,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 77,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1512.3778076171876,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Sivir"
+
+			},
+
+			{
+
+				"EventID": 78,
+
+				"EventName": "Multikill",
+
+				"EventTime": 1512.3778076171876,
+
+				"KillStreak": 4,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Kog'Maw"
+
+				],
+
+				"EventID": 79,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1545.7081298828126,
+
+				"KillerName": "Bot Tristana",
+
+				"VictimName": "EnderArcher21"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Tristana"
+
+				],
+
+				"EventID": 80,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1566.8797607421876,
+
+				"KillerName": "Bot Kog'Maw",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Morgana",
+
+					"Bot Annie"
+
+				],
+
+				"EventID": 81,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1567.5787353515626,
+
+				"KillerName": "Bot Karthus",
+
+				"VictimName": "Bot Tristana"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Morgana",
+
+					"Bot Karthus",
+
+					"Bot Annie"
+
+				],
+
+				"EventID": 82,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1575.287109375,
+
+				"KillerName": "Bot Sivir",
+
+				"VictimName": "Bot Kog'Maw"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 83,
+
+				"EventName": "TurretKilled",
+
+				"EventTime": 1578.4549560546876,
+
+				"KillerName": "Minion_T100L2S49N0312",
+
+				"TurretKilled": "Turret_T2_L_02_A"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 84,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1593.419189453125,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Karthus"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 85,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1607.031982421875,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Sivir"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 86,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1621.061279296875,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Shen"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 87,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1626.9500732421876,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 88,
+
+				"EventName": "TurretKilled",
+
+				"EventTime": 1643.348388671875,
+
+				"KillerName": "Bot Tristana",
+
+				"TurretKilled": "Turret_T2_C_04_A"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 89,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1671.5908203125,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Tristana"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 90,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1694.5616455078126,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 91,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1697.131103515625,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Karthus"
+
+			},
+
+			{
+
+				"EventID": 92,
+
+				"EventName": "Multikill",
+
+				"EventTime": 1697.131103515625,
+
+				"KillStreak": 2,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 93,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1714.1634521484376,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 94,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1738.185302734375,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Sivir"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 95,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1740.32080078125,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "EnderArcher21"
+
+			},
+
+			{
+
+				"EventID": 96,
+
+				"EventName": "Multikill",
+
+				"EventTime": 1740.32080078125,
+
+				"KillStreak": 2,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Annie",
+
+					"Bot Kog'Maw"
+
+				],
+
+				"EventID": 97,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1763.7926025390626,
+
+				"KillerName": "Bot Tristana",
+
+				"VictimName": "Bot Karthus"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Karthus"
+
+				],
+
+				"EventID": 98,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1774.5701904296876,
+
+				"KillerName": "Bot Morgana",
+
+				"VictimName": "Bot Kog'Maw"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 99,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1797.0399169921876,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 100,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1802.9111328125,
+
+				"KillerName": "Bot Sivir",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Sivir",
+
+					"Bot Morgana"
+
+				],
+
+				"EventID": 101,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1809.0501708984376,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Shen"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 102,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1809.2841796875,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Annie",
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 103,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1812.85400390625,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Sivir"
+
+			},
+
+			{
+
+				"EventID": 104,
+
+				"EventName": "Multikill",
+
+				"EventTime": 1812.85400390625,
+
+				"KillStreak": 2,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 105,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1852.4737548828126,
+
+				"KillerName": "Bot Tristana",
+
+				"VictimName": "Bot Karthus"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"jantizio"
+
+				],
+
+				"EventID": 106,
+
+				"EventName": "BaronKill",
+
+				"EventTime": 1853.6912841796876,
+
+				"KillerName": "EnderArcher21",
+
+				"Stolen": "False"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 107,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1860.46484375,
+
+				"KillerName": "Bot Kog'Maw",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Kog'Maw"
+
+				],
+
+				"EventID": 108,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1878.031494140625,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Morgana"
+
+				],
+
+				"EventID": 109,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1881.400634765625,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Kog'Maw"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 110,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1885.2037353515626,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Sivir"
+
+			},
+
+			{
+
+				"EventID": 111,
+
+				"EventName": "Multikill",
+
+				"EventTime": 1885.2037353515626,
+
+				"KillStreak": 2,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 112,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1887.9730224609376,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"EventID": 113,
+
+				"EventName": "Multikill",
+
+				"EventTime": 1887.9730224609376,
+
+				"KillStreak": 2,
+
+				"KillerName": "EnderArcher21"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"DragonType": "Fire",
+
+				"EventID": 114,
+
+				"EventName": "DragonKill",
+
+				"EventTime": 1919.25146484375,
+
+				"KillerName": "EnderArcher21",
+
+				"Stolen": "False"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Tristana"
+
+				],
+
+				"EventID": 115,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1919.718505859375,
+
+				"KillerName": "Bot Shen",
+
+				"VictimName": "Bot Karthus"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 116,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1940.5384521484376,
+
+				"KillerName": "Bot Morgana",
+
+				"VictimName": "Bot Tristana"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Sivir",
+
+					"Bot Annie"
+
+				],
+
+				"EventID": 117,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1974.603271484375,
+
+				"KillerName": "Bot Karthus",
+
+				"VictimName": "Bot Kog'Maw"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 118,
+
+				"EventName": "TurretKilled",
+
+				"EventTime": 1975.8375244140626,
+
+				"KillerName": "EnderArcher21",
+
+				"TurretKilled": "Turret_T1_L_03_A"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 119,
+
+				"EventName": "TurretKilled",
+
+				"EventTime": 1977.53857421875,
+
+				"KillerName": "Minion_T100L0S63N0408",
+
+				"TurretKilled": "Turret_T2_R_02_A"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Kog'Maw"
+
+				],
+
+				"EventID": 120,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 1988.4007568359376,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 121,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2008.667236328125,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Tristana"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 122,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2011.9549560546876,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Shen"
+
+			},
+
+			{
+
+				"EventID": 123,
+
+				"EventName": "Multikill",
+
+				"EventTime": 2011.9549560546876,
+
+				"KillStreak": 2,
+
+				"KillerName": "EnderArcher21"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 124,
+
+				"EventName": "TurretKilled",
+
+				"EventTime": 2026.6171875,
+
+				"KillerName": "Minion_T200L1S65N0423",
+
+				"TurretKilled": "Turret_T1_C_04_A"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 125,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2029.3365478515626,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"EnderArcher21"
+
+				],
+
+				"EventID": 126,
+
+				"EventName": "TurretKilled",
+
+				"EventTime": 2034.0904541015626,
+
+				"KillerName": "Bot Sivir",
+
+				"TurretKilled": "Turret_T1_L_02_A"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Karthus"
+
+				],
+
+				"EventID": 127,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2050.856201171875,
+
+				"KillerName": "Bot Sivir",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Sivir"
+
+				],
+
+				"EventID": 128,
+
+				"EventName": "TurretKilled",
+
+				"EventTime": 2057.963134765625,
+
+				"KillerName": "Bot Karthus",
+
+				"TurretKilled": "Turret_T1_C_03_A"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Karthus"
+
+				],
+
+				"EventID": 129,
+
+				"EventName": "InhibKilled",
+
+				"EventTime": 2066.61572265625,
+
+				"InhibKilled": "Barracks_T1_C1",
+
+				"KillerName": "Bot Sivir"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 130,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2083.9697265625,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Karthus"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 131,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2088.490478515625,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Sivir"
+
+			},
+
+			{
+
+				"EventID": 132,
+
+				"EventName": "Multikill",
+
+				"EventTime": 2088.490478515625,
+
+				"KillStreak": 2,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Kog'Maw"
+
+				],
+
+				"EventID": 133,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2099.10009765625,
+
+				"KillerName": "Bot Tristana",
+
+				"VictimName": "EnderArcher21"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Annie",
+
+					"Bot Shen",
+
+					"Bot Kog'Maw",
+
+					"Bot Tristana"
+
+				],
+
+				"EventID": 134,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2127.994140625,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 135,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2160.15673828125,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Annie",
+
+					"Bot Kog'Maw"
+
+				],
+
+				"EventID": 136,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2171.566650390625,
+
+				"KillerName": "Bot Tristana",
+
+				"VictimName": "Bot Sivir"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 137,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2194.537841796875,
+
+				"KillerName": "Bot Karthus",
+
+				"VictimName": "Bot Kog'Maw"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"EnderArcher21",
+
+					"Bot Morgana"
+
+				],
+
+				"EventID": 138,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2219.19384765625,
+
+				"KillerName": "Bot Karthus",
+
+				"VictimName": "Bot Shen"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Morgana"
+
+				],
+
+				"EventID": 139,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2219.19384765625,
+
+				"KillerName": "Bot Karthus",
+
+				"VictimName": "Bot Tristana"
+
+			},
+
+			{
+
+				"EventID": 140,
+
+				"EventName": "Multikill",
+
+				"EventTime": 2219.19384765625,
+
+				"KillStreak": 2,
+
+				"KillerName": "Bot Karthus"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen",
+
+					"Bot Tristana"
+
+				],
+
+				"EventID": 141,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2219.34423828125,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Karthus"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 142,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2224.766357421875,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"EventID": 143,
+
+				"EventName": "Multikill",
+
+				"EventTime": 2224.766357421875,
+
+				"KillStreak": 2,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 144,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2228.9033203125,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"EventID": 145,
+
+				"EventName": "Multikill",
+
+				"EventTime": 2228.9033203125,
+
+				"KillStreak": 3,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 146,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2235.609619140625,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Sivir"
+
+			},
+
+			{
+
+				"EventID": 147,
+
+				"EventName": "Multikill",
+
+				"EventTime": 2235.609619140625,
+
+				"KillStreak": 4,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 148,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2244.517578125,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "EnderArcher21"
+
+			},
+
+			{
+
+				"EventID": 149,
+
+				"EventName": "Multikill",
+
+				"EventTime": 2244.517578125,
+
+				"KillStreak": 5,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Acer": "jantizio",
+
+				"AcingTeam": "ORDER",
+
+				"EventID": 150,
+
+				"EventName": "Ace",
+
+				"EventTime": 2244.517578125
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 151,
+
+				"EventName": "TurretKilled",
+
+				"EventTime": 2262.283447265625,
+
+				"KillerName": "Minion_T100L2S72N0470",
+
+				"TurretKilled": "Turret_T2_L_01_A"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 152,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2318.552490234375,
+
+				"KillerName": "Bot Tristana",
+
+				"VictimName": "Bot Sivir"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Annie",
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 153,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2320.53662109375,
+
+				"KillerName": "Bot Tristana",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"EventID": 154,
+
+				"EventName": "Multikill",
+
+				"EventTime": 2320.53662109375,
+
+				"KillStreak": 2,
+
+				"KillerName": "Bot Tristana"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 155,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2344.976318359375,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Tristana"
+
+			},
+
+			{
+
+				"EventID": 156,
+
+				"EventName": "InhibRespawningSoon",
+
+				"EventTime": 2351.56494140625,
+
+				"InhibRespawningSoon": "Barracks_T1_C1"
+
+			},
+
+			{
+
+				"EventID": 157,
+
+				"EventName": "InhibRespawned",
+
+				"EventTime": 2366.612548828125,
+
+				"InhibRespawned": "Barracks_T1_C1"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"EnderArcher21"
+
+				],
+
+				"EventID": 158,
+
+				"EventName": "BaronKill",
+
+				"EventTime": 2380.842041015625,
+
+				"KillerName": "jantizio",
+
+				"Stolen": "True"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 159,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2403.68017578125,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Sivir"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 160,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2408.53466796875,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"EventID": 161,
+
+				"EventName": "Multikill",
+
+				"EventTime": 2408.53466796875,
+
+				"KillStreak": 2,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 162,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2438.1787109375,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Kog'Maw"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"EnderArcher21"
+
+				],
+
+				"DragonType": "Fire",
+
+				"EventID": 163,
+
+				"EventName": "DragonKill",
+
+				"EventTime": 2459.047607421875,
+
+				"KillerName": "jantizio",
+
+				"Stolen": "False"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 164,
+
+				"EventName": "TurretKilled",
+
+				"EventTime": 2473.093505859375,
+
+				"KillerName": "Minion_T100L0S79N0520",
+
+				"TurretKilled": "Turret_T2_R_01_A"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Annie"
+
+				],
+
+				"EventID": 165,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2489.45849609375,
+
+				"KillerName": "Bot Karthus",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Morgana"
+
+				],
+
+				"EventID": 166,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2489.45849609375,
+
+				"KillerName": "Bot Karthus",
+
+				"VictimName": "Bot Tristana"
+
+			},
+
+			{
+
+				"EventID": 167,
+
+				"EventName": "Multikill",
+
+				"EventTime": 2489.45849609375,
+
+				"KillStreak": 2,
+
+				"KillerName": "Bot Karthus"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 168,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2497.066162109375,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 169,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2503.673095703125,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Sivir"
+
+			},
+
+			{
+
+				"EventID": 170,
+
+				"EventName": "Multikill",
+
+				"EventTime": 2503.673095703125,
+
+				"KillStreak": 2,
+
+				"KillerName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"jantizio"
+
+				],
+
+				"EventID": 171,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2523.1396484375,
+
+				"KillerName": "Bot Kog'Maw",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 172,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2553.968505859375,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Karthus"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 173,
+
+				"EventName": "TurretKilled",
+
+				"EventTime": 2556.570556640625,
+
+				"KillerName": "Bot Kog'Maw",
+
+				"TurretKilled": "Turret_T2_C_03_A"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 174,
+
+				"EventName": "InhibKilled",
+
+				"EventTime": 2563.176513671875,
+
+				"InhibKilled": "Barracks_T2_C1",
+
+				"KillerName": "Bot Kog'Maw"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Morgana",
+
+					"Bot Karthus"
+
+				],
+
+				"EventID": 175,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2569.181884765625,
+
+				"KillerName": "Bot Sivir",
+
+				"VictimName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 176,
+
+				"EventName": "InhibKilled",
+
+				"EventTime": 2588.542724609375,
+
+				"InhibKilled": "Barracks_T2_R1",
+
+				"KillerName": "Minion_T100L0S82N0542"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"EnderArcher21",
+
+					"Bot Morgana",
+
+					"Bot Annie"
+
+				],
+
+				"EventID": 177,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2601.59521484375,
+
+				"KillerName": "Bot Sivir",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Sivir",
+
+					"Bot Morgana",
+
+					"Bot Annie"
+
+				],
+
+				"EventID": 178,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2602.479248046875,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Tristana"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"EnderArcher21",
+
+					"Bot Morgana"
+
+				],
+
+				"EventID": 179,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2607.583984375,
+
+				"KillerName": "Bot Sivir",
+
+				"VictimName": "Bot Shen"
+
+			},
+
+			{
+
+				"EventID": 180,
+
+				"EventName": "Multikill",
+
+				"EventTime": 2607.583984375,
+
+				"KillStreak": 2,
+
+				"KillerName": "Bot Sivir"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Sivir"
+
+				],
+
+				"EventID": 181,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2634.892333984375,
+
+				"KillerName": "EnderArcher21",
+
+				"VictimName": "Bot Kog'Maw"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 182,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2661.233642578125,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 183,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2672.161865234375,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Sivir"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 184,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2711.078857421875,
+
+				"KillerName": "jantizio",
+
+				"VictimName": "Bot Karthus"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"jantizio"
+
+				],
+
+				"EventID": 185,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2720.420654296875,
+
+				"KillerName": "Bot Shen",
+
+				"VictimName": "EnderArcher21"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 186,
+
+				"EventName": "TurretKilled",
+
+				"EventTime": 2733.6669921875,
+
+				"KillerName": "jantizio",
+
+				"TurretKilled": "Turret_T2_C_01_A"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Morgana",
+
+					"Bot Annie"
+
+				],
+
+				"EventID": 187,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2741.95751953125,
+
+				"KillerName": "Bot Sivir",
+
+				"VictimName": "jantizio"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Sivir",
+
+					"Bot Morgana"
+
+				],
+
+				"EventID": 188,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2752.03271484375,
+
+				"KillerName": "Bot Annie",
+
+				"VictimName": "Bot Kog'Maw"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Morgana",
+
+					"Bot Annie"
+
+				],
+
+				"EventID": 189,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2757.3544921875,
+
+				"KillerName": "Bot Sivir",
+
+				"VictimName": "Bot Shen"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 190,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2761.435791015625,
+
+				"KillerName": "Bot Morgana",
+
+				"VictimName": "Bot Tristana"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Sivir",
+
+					"Bot Annie"
+
+				],
+
+				"EventID": 191,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2762.755615234375,
+
+				"KillerName": "Bot Morgana",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"EventID": 192,
+
+				"EventName": "Multikill",
+
+				"EventTime": 2762.755615234375,
+
+				"KillStreak": 2,
+
+				"KillerName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Acer": "Bot Morgana",
+
+				"AcingTeam": "CHAOS",
+
+				"EventID": 193,
+
+				"EventName": "Ace",
+
+				"EventTime": 2762.755615234375
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"jantizio",
+
+					"Bot Shen"
+
+				],
+
+				"EventID": 194,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2837.24609375,
+
+				"KillerName": "Bot Kog'Maw",
+
+				"VictimName": "Bot Karthus"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"jantizio",
+
+					"Bot Kog'Maw"
+
+				],
+
+				"EventID": 195,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2839.880615234375,
+
+				"KillerName": "Bot Shen",
+
+				"VictimName": "Bot Sivir"
+
+			},
+
+			{
+
+				"EventID": 196,
+
+				"EventName": "InhibRespawningSoon",
+
+				"EventTime": 2848.171875,
+
+				"InhibRespawningSoon": "Barracks_T2_C1"
+
+			},
+
+			{
+
+				"EventID": 197,
+
+				"EventName": "InhibRespawned",
+
+				"EventTime": 2863.22216796875,
+
+				"InhibRespawned": "Barracks_T2_C1"
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 198,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2865.791015625,
+
+				"KillerName": "Unknown",
+
+				"VictimName": "EnderArcher21"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"Bot Shen",
+
+					"Bot Kog'Maw"
+
+				],
+
+				"EventID": 199,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2865.921630859375,
+
+				"KillerName": "Bot Tristana",
+
+				"VictimName": "Bot Morgana"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"jantizio",
+
+					"Bot Annie",
+
+					"Bot Shen",
+
+					"Bot Kog'Maw"
+
+				],
+
+				"EventID": 200,
+
+				"EventName": "InhibKilled",
+
+				"EventTime": 2869.2080078125,
+
+				"InhibKilled": "Barracks_T2_C1",
+
+				"KillerName": "Bot Tristana"
+
+			},
+
+			{
+
+				"EventID": 201,
+
+				"EventName": "InhibRespawningSoon",
+
+				"EventTime": 2873.495849609375,
+
+				"InhibRespawningSoon": "Barracks_T2_R1"
+
+			},
+
+			{
+
+				"Assisters": [
+
+					"jantizio",
+
+					"Bot Shen",
+
+					"Bot Kog'Maw"
+
+				],
+
+				"EventID": 202,
+
+				"EventName": "ChampionKill",
+
+				"EventTime": 2875.781005859375,
+
+				"KillerName": "Bot Tristana",
+
+				"VictimName": "Bot Annie"
+
+			},
+
+			{
+
+				"EventID": 203,
+
+				"EventName": "Multikill",
+
+				"EventTime": 2875.781005859375,
+
+				"KillStreak": 2,
+
+				"KillerName": "Bot Tristana"
+
+			},
+
+			{
+
+				"Acer": "Bot Tristana",
+
+				"AcingTeam": "ORDER",
+
+				"EventID": 204,
+
+				"EventName": "Ace",
+
+				"EventTime": 2875.781005859375
+
+			},
+
+			{
+
+				"Assisters": [],
+
+				"EventID": 205,
+
+				"EventName": "TurretKilled",
+
+				"EventTime": 2888.258544921875,
+
+				"KillerName": "jantizio",
+
+				"TurretKilled": "Turret_T2_C_02_A"
+
+			},
+
+			{
+
+				"EventID": 206,
+
+				"EventName": "InhibRespawned",
+
+				"EventTime": 2888.559814453125,
+
+				"InhibRespawned": "Barracks_T2_R1"
+
+			}
+
+		]
+
+	},
+
+	"gameData": {
+
+		"gameMode": "CLASSIC",
+
+		"gameTime": 2893.15234375,
+
+		"mapName": "Map11",
+
+		"mapNumber": 11,
+
+		"mapTerrain": "Infernal"
+
+	}
+
+}
