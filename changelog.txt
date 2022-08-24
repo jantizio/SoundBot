@@ -1,0 +1,18 @@
+**Versione 3.0.0**
+ - Viene aggiunto il comando `\banana` è un toggle (attiva/disattiva) mentre è attivo guarda la partita di piske e insulta i player che muoiono
+
+**Versione 3.1.0**
+ - Il comando `\banana` non insulta più, ma è diventato wholesome, dando supporto morale (non è più uno yasuo main).
+
+**Versione 3.2.0**
+ - Le funzionalità del comando `\banana` sono di più: ti fa un complimento quando fai una kill, dice cose utili quando avviene un ace, esulta quando fai una serie di uccisioni.
+
+**Versione 3.2.1**
+ - Cambiamento al codice per gestire gli eventi, tranquilli a voi non cambia niente. Inoltre alcuni bug minori risolti.
+
+**Versione 3.3.0**
+ - Aggiunta di nuove frasi e introduzione della riproduzione degli audio, ok figata!
+ - Banana mode in remoto sta arrivando! Migliorate le funzionalità in questo senso, presto il bot potrà leggere le vostre partite.
+
+**Versione 3.3.1**
+ - Ora è possibile aggiungere dei nomi alla banana mode
