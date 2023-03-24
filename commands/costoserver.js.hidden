@@ -1,0 +1,22 @@
+const fs = require('fs');
+
+module.exports = {
+  name: 'costoserver',
+  description:
+    'Il comando dice quanto dovresti pagare, se ti unissi, per contribuire al server',
+  execute(message) {
+    const costoAbbonamento = 15;
+
+    fs.readFile('../iscritti.json', 'utf8', (err, data) => {
+      if (err) {
+        console.log(`Error reading file from disk: ${err}`);
+      } else {
+        // parse JSON string to JSON object
+        const iscritti = JSON.parse(data);
+        const nIscritti = Object.keys(iscritti).length;
+        const costo = parseFloat(costoAbbonamento / (nIscritti + 1)).toFixed(2);
+        message.channel.send(`Dovresti pagare ${costo}€`);
+      }
+    });
+  },
+};

@@ -1,0 +1,32 @@
+const fs = require('fs');
+
+module.exports = {
+  name: 'registrami',
+  description:
+    "Aggiunge l'utente che l'ha eseguito come partecipante per il server pixelmon",
+  execute(message) {
+    fs.readFile('../iscritti.json', 'utf8', (err, data) => {
+      if (err) {
+        console.log(`Error reading file from disk: ${err}`);
+      } else {
+        // parse JSON string to JSON object
+        const iscritti = JSON.parse(data);
+        const tag = message.author.tag;
+
+        // check if user is already in
+        if (!iscritti.includes(tag)) iscritti.push(tag);
+
+        // write new data back to the file
+        fs.writeFile(
+          '../iscritti.json',
+          JSON.stringify(iscritti, null, 4),
+          (err) => {
+            if (err) {
+              console.log(`Error writing file: ${err}`);
+            }
+          }
+        );
+      }
+    });
+  },
+};
