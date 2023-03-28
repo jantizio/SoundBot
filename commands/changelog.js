@@ -1,32 +1,32 @@
-const fs = require("fs");
-const { version } = require("../package.json");
-const defaultEmbed = require("../lib/defaultEmbed.js");
+const { SlashCommandBuilder } = require('discord.js');
+const fs = require('fs');
+const { version } = require('../package.json');
+const defaultEmbed = require('../lib/defaultEmbed.js');
+
+function body(jantizio, bot) {
+  const testo = fs.readFileSync('./changelog.txt', 'utf8');
+
+  const changelogEmbed = defaultEmbed(bot, jantizio);
+  changelogEmbed
+    .setDescription(`**SoundBot versione ${version}**`)
+    .addFields({ name: '\u200B', value: `${testo}\n\u200B` });
+
+  return changelogEmbed;
+}
 
 module.exports = {
-  name: "changelog",
-  description:
-    "È la cronologia dei cambiamenti fatti al bot, qui puoi scoprire tutte le nuove funzionalità!",
-  aliases: ["ch", "log", "change"],
-  execute(message, args, ops) {
-    const { jantizio } = ops;
-    const { bot } = ops;
-    const testo = fs.readFileSync("./changelog.txt", "utf8");
-
-    /* const changelogEmbed = new Discord.MessageEmbed()
-      .setColor("#0099ff")
-      .setAuthor(bot.username, bot.displayAvatarURL({ dynamic: true }))
-      .setDescription(`**SoundBot versione ${version}**`)
-      .addField("\u200B", `${testo}\n\u200B`)
-      .setTimestamp()
-      .setFooter(
-        `Autore: ${jantizio.username}`,
-        jantizio.displayAvatarURL({ dynamic: true })
-      ); */
-
-    const changelogEmbed = defaultEmbed(bot, jantizio);
-    changelogEmbed
-      .setDescription(`**SoundBot versione ${version}**`)
-      .addField("\u200B", `${testo}\n\u200B`);
-    return message.channel.send(changelogEmbed);
+  data: new SlashCommandBuilder()
+    .setName('changelog')
+    .setDescription(
+      'È la cronologia dei cambiamenti fatti al bot, qui puoi scoprire tutte le nuove funzionalità!'
+    ),
+  aliases: ['ch', 'log', 'change'],
+  async execute(interaction) {
+    const { jantizio, user: bot } = interaction.client;
+    await interaction.reply({ embeds: [body(jantizio, bot)] });
+  },
+  executeOld(message) {
+    const { jantizio, user: bot } = message.client;
+    return message.channel.send({ embeds: [body(jantizio, bot)] });
   },
 };
