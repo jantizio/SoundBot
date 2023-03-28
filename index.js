@@ -1,24 +1,59 @@
 /* eslint-disable linebreak-style */
-// richiede il modulo discord.js (importa) e importa config.json
-const fs = require('fs');
-const Discord = require('discord.js');
+// Require the necessary discord.js classes and token
+const fs = require('node:fs');
+const path = require('node:path');
+const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
 const { prefix, token } = require('./config.json');
+// const { generateDependencyReport } = require('@discordjs/voice');
 
-// crea un nuovo client
-const client = new Discord.Client();
-client.commands = new Discord.Collection();
-client.audioList = new Discord.Collection();
+// Create a new client instance
+const client = new Client({
+  intents: [
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.MessageContent,
+    GatewayIntentBits.GuildVoiceStates,
+  ],
+});
+
+client.commands = new Collection();
+client.audioList = new Collection();
 const active = new Map();
-var jantizio;
 
+const eventsPath = path.join(__dirname, 'events');
+const eventFiles = fs
+  .readdirSync(eventsPath)
+  .filter((file) => file.endsWith('.js'));
+
+for (const file of eventFiles) {
+  const filePath = path.join(eventsPath, file);
+  const event = require(filePath);
+  if (event.once) {
+    client.once(event.name, (...args) => event.execute(...args));
+  } else {
+    client.on(event.name, (...args) => event.execute(...args));
+  }
+}
+
+const commandsPath = path.join(__dirname, 'commands');
 const commandFiles = fs
-  .readdirSync('./commands')
+  .readdirSync(commandsPath)
   .filter((file) => file.endsWith('.js'));
 
 for (const file of commandFiles) {
-  const command = require(`./commands/${file}`);
-  client.commands.set(command.name, command);
+  const filePath = path.join(commandsPath, file);
+  const command = require(filePath);
+
+  // Set a new item in the Collection with the key as the command name and the value as the exported module
+  if ('data' in command && 'execute' in command) {
+    client.commands.set(command.data.name, command);
+  } else {
+    console.log(
+      `[WARNING] The command at ${filePath} is missing a required "data" or "execute" property.`
+    );
+  }
 }
+console.log(client.commands);
 // crea una lista di file audio, identificati dal percorso
 const audioFiles = fs
   .readdirSync('./sounds')
@@ -29,16 +64,24 @@ for (const file of audioFiles) {
   client.audioList.set(nome[0], `../sounds/${file}`);
 }
 
-// questo verrà eseguito dopo il login una solo volta (once)
-client.once('ready', () => {
-  console.log('Ready!');
-  client.user.setActivity(`${prefix}help`, { type: 'LISTENING' });
-  jantizio = client.users.cache.get('270972425787670529');
+// When the client is ready, run this code (only once)
+client.once(Events.ClientReady, (c) => {
+  console.log(`Ready! Logged in as ${c.user.tag}`);
+  c.user.setActivity(`${prefix}help`, { type: 'LISTENING' });
+  const jantizio = client.users.fetch('270972425787670529');
+  jantizio.then(function (result) {
+    c.jantizio = result;
+  });
 
-  //require("./lib/tcpserver")();
+  // jantizio = client.users.cache.get('270972425787670529');
+  // console.log(jantizio);
+
+  // require("./lib/tcpserver")();
+  // console.log(generateDependencyReport());
 });
 
-client.on('message', (message) => {
+// text command handler
+client.on(Events.MessageCreate, (message) => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
   const args = message.content.slice(prefix.length).trim().split(/ +/);
   const commandName = args.shift().toLowerCase();
@@ -50,34 +93,34 @@ client.on('message', (message) => {
     );
   if (!command) return;
   const serverName = client.guilds.cache.get(message.guild.id).name;
-  console.log(`${command.name} nel server ${serverName}`);
+  console.log(`${command.data.name} nel server ${serverName}`);
 
   if (command.args && !args.length) {
     let reply = `Devi specificare degli argomenti, ${message.author}!`;
 
     if (command.usage) {
-      reply += `\nL'utilizzo corretto sarebbe: \`${prefix}${command.name} ${command.usage}\``;
+      reply += `\nL'utilizzo corretto sarebbe: \`${prefix}${command.data.name} ${command.usage}\``;
     }
     return message.channel.send(reply);
   }
 
   const ops = {
     active,
-    jantizio,
+    jantizio: client.jantizio,
     bot: client.user,
   };
   try {
-    command.execute(message, args, ops);
+    command.executeOld(message, args, ops);
   } catch (error) {
     console.error(error);
     message.reply(
-      "C'è stato un errore nel tentativo di eseguire questo comando"
+      `C'è stato un errore nel tentativo di eseguire questo comando`
     );
   }
 });
 
 // -- Funzione per bannare la gente quando gioca a lol :) --
-/*client.on('presenceUpdate', (oldPresence, newPresence) => {
+/* client.on('presenceUpdate', (oldPresence, newPresence) => {
   //322006245995315202
   const leagueOfPanni = '322006245995315202'; //league of panni
   const laVoceDiPanni = '424272727139024898';
