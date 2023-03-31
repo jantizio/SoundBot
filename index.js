@@ -1,8 +1,13 @@
-/* eslint-disable linebreak-style */
 // Require the necessary discord.js classes and token
 const fs = require('node:fs');
 const path = require('node:path');
-const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
+const {
+  Client,
+  Collection,
+  Events,
+  GatewayIntentBits,
+  ActivityType,
+} = require('discord.js');
 const { prefix, token } = require('./config.json');
 // const { generateDependencyReport } = require('@discordjs/voice');
 
@@ -18,7 +23,7 @@ const client = new Client({
 
 client.commands = new Collection();
 client.audioList = new Collection();
-const active = new Map();
+client.active = new Collection();
 
 const eventsPath = path.join(__dirname, 'events');
 const eventFiles = fs
@@ -53,11 +58,11 @@ for (const file of commandFiles) {
     );
   }
 }
-console.log(client.commands);
+// console.log(client.commands);
 // crea una lista di file audio, identificati dal percorso
 const audioFiles = fs
   .readdirSync('./sounds')
-  .filter((file) => file.endsWith('.mp3'));
+  .filter((file) => file.endsWith('.ogg'));
 
 for (const file of audioFiles) {
   const nome = file.split('.');
@@ -67,7 +72,11 @@ for (const file of audioFiles) {
 // When the client is ready, run this code (only once)
 client.once(Events.ClientReady, (c) => {
   console.log(`Ready! Logged in as ${c.user.tag}`);
-  c.user.setActivity(`${prefix}help`, { type: 'LISTENING' });
+  // c.user.setActivity(`${prefix}help`, { type: 'LISTENING' });
+  c.user.setPresence({
+    activities: [{ name: `${prefix}help`, type: ActivityType.Listening }],
+    status: 'online',
+  });
   const jantizio = client.users.fetch('270972425787670529');
   jantizio.then(function (result) {
     c.jantizio = result;
@@ -104,13 +113,8 @@ client.on(Events.MessageCreate, (message) => {
     return message.channel.send(reply);
   }
 
-  const ops = {
-    active,
-    jantizio: client.jantizio,
-    bot: client.user,
-  };
   try {
-    command.executeOld(message, args, ops);
+    command.executeOld(message, args);
   } catch (error) {
     console.error(error);
     message.reply(

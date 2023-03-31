@@ -1,38 +1,32 @@
-const AWS = require("aws-sdk");
-const { play } = require("../lib/play.js");
+const { SlashCommandBuilder } = require('discord.js');
+const { createAudioResource } = require('@discordjs/voice');
+const { initializeConnection } = require('../lib/play.js');
+const {
+  PollyClient,
+  SynthesizeSpeechCommand,
+} = require('@aws-sdk/client-polly');
 
-module.exports = {
-  name: "tts",
-  description: "Trasforma quello che scrivi in voce",
-  args: true,
-  usage: "<testo>",
-  async execute(message, args, ops) {
-    const { voice } = message.member;
+async function body(text, ops) {
+  const { client, voice, author, channel } = ops;
+  const { active } = client;
+  if (!voice.channelId) {
+    return 'Devi essere in un canale vocale';
+  }
 
-    if (!voice.channelID) {
-      message.reply("non sei in un canale vocale");
-      return;
-    }
+  const Polly = new PollyClient({
+    region: 'eu-central-1',
+  });
 
-    const Polly = new AWS.Polly({
-      region: "eu-west-1",
-    });
+  const command = new SynthesizeSpeechCommand({
+    Text: text,
+    OutputFormat: 'ogg_vorbis',
+    VoiceId: 'Giorgio',
+  });
 
-    let testo;
-    if (typeof args === "string") {
-      testo = args;
-    } else {
-      testo = args.join(" ");
-    }
+  const response = await Polly.send(command);
 
-    const input = {
-      Text: testo,
-      OutputFormat: "mp3",
-      VoiceId: "Giorgio",
-    };
-
-    // salva su file i caratteri utilizzati
-    /* fs.readFile("./caratteri.txt", "utf8", async (err, data) => {
+  // salva su file i caratteri utilizzati
+  /* fs.readFile("./caratteri.txt", "utf8", async (err, data) => {
       if (err) return console.log(err);
 
       var str = args.join(" ").length;
@@ -47,28 +41,64 @@ module.exports = {
         }
       );
     }); */
-    const data = ops.active.get(message.guild.id) || {};
+  const data = active.get(voice.guild.id) || {};
 
-    if (!data.connection) data.connection = await voice.channel.join();
-    if (!data.queue) data.queue = [];
-    data.guildID = message.guild.id;
+  const tts = {
+    songTitle: 'text to speech',
+    requester: author.username,
+    resource: createAudioResource(response.AudioStream),
+    announceChannel: channel.id,
+  };
 
-    data.queue.push({
-      songTitle: "text to speech",
-      requester: message.author.username,
-      path: input,
-      announceChannel: message.channel.id,
-      Polly,
-      type: "text",
-    });
+  initializeConnection(client, voice, data, tts);
+}
 
-    if (!data.dispatcher) play(message.client, ops, data);
-    else {
-      /* message.channel.send(
-        `Aggiunta alla coda: ${data.queue[0].songTitle} | Richiesta da: ${data.queue[0].requester}`
-      ); */
+module.exports = {
+  data: new SlashCommandBuilder()
+    .setName('tts')
+    .setDescription('Trasforma quello che scrivi in voce')
+    .addStringOption((option) =>
+      option
+        .setName('testo')
+        .setDescription('Il testo da trasformare in voce')
+        .setRequired(true)
+    ),
+  args: true,
+  usage: '<testo>',
+  async execute(interaction) {
+    const text = interaction.options.getString('testo');
+    const ops = {
+      client: interaction.client,
+      voice: interaction.member.voice,
+      author: interaction.user,
+      channel: interaction.channel,
+    };
+    const out = await body(text, ops);
+    if (out) {
+      await interaction.reply({ content: out, ephemeral: true });
+    } else {
+      await interaction.reply(`**TTS:** ${text}`);
+    }
+  },
+  async executeOld(message, args) {
+    const ops = {
+      client: message.client,
+      voice: message.member.voice,
+      author: message.author,
+      channel: message.channel,
+    };
+
+    let testo;
+    if (typeof args === 'string') {
+      testo = args;
+    } else {
+      testo = args.join(' ');
     }
 
-    ops.active.set(message.guild.id, data);
+    const out = await body(testo, ops);
+
+    if (out) {
+      message.reply(out);
+    }
   },
 };
