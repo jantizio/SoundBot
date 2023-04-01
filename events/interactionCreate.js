@@ -19,7 +19,7 @@ module.exports = {
     } catch (error) {
       console.error(error);
       const error_response = {
-        content: 'There was an error while executing this command!',
+        content: `C'è stato un errore nel tentativo di eseguire questo comando`,
         ephemeral: true,
       };
 

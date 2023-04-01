@@ -1,31 +1,53 @@
+const { SlashCommandBuilder } = require('discord.js');
+
 module.exports = {
-  name: 'reload',
-  description: 'Aggiorna un comando',
+  data: new SlashCommandBuilder()
+    .setName('reload')
+    .setDescription('Reloads a command.')
+    .addStringOption((option) =>
+      option
+        .setName('command')
+        .setDescription('The command to reload.')
+        .setRequired(true)
+    ),
   args: true,
-  execute(message, args) {
+  async execute(interaction) {
+    const commandName = interaction.options
+      .getString('command', true)
+      .toLowerCase();
+    const command = interaction.client.commands.get(commandName);
+
+    await interaction.reply({
+      content: body(interaction.client, command, commandName),
+      ephemeral: true,
+    });
+  },
+  executeOld(message, args) {
     const commandName = args[0].toLowerCase();
-    const command = message.client.commands.get(commandName)
-      || message.client.commands.find(
-        (cmd) => cmd.aliases && cmd.aliases.includes(commandName),
+    const command =
+      message.client.commands.get(commandName) ||
+      message.client.commands.find(
+        (cmd) => cmd.aliases && cmd.aliases.includes(commandName)
       );
 
-    if (!command) {
-      return message.channel.send(
-        `There is no command with name or alias \`${commandName}\`, ${message.author}!`,
-      );
-    }
-
-    delete require.cache[require.resolve(`./${command.name}.js`)];
-
-    try {
-      const newCommand = require(`./${command.name}.js`);
-      message.client.commands.set(newCommand.name, newCommand);
-      message.channel.send(`Command \`${command.name}\` was reloaded!`);
-    } catch (error) {
-      console.error(error);
-      message.channel.send(
-        `There was an error while reloading a command \`${command.name}\`:\n\`${error.message}\``,
-      );
-    }
+    message.channel.send(body(message.client, command, commandName));
   },
 };
+
+function body(client, command, commandName) {
+  if (!command) {
+    return `There is no command with name \`${commandName}\`!`;
+  }
+
+  delete require.cache[require.resolve(`./${command.data.name}.js`)];
+
+  try {
+    client.commands.delete(command.data.name);
+    const newCommand = require(`./${command.data.name}.js`);
+    client.commands.set(newCommand.data.name, newCommand);
+    return `Command \`${newCommand.data.name}\` was reloaded!`;
+  } catch (error) {
+    console.error(error);
+    return `There was an error while reloading a command \`${command.data.name}\`:\n\`${error.message}\``;
+  }
+}
