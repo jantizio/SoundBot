@@ -6,53 +6,6 @@ const {
   SynthesizeSpeechCommand,
 } = require('@aws-sdk/client-polly');
 
-async function body(text, ops) {
-  const { client, voice, author, channel } = ops;
-  const { active } = client;
-  if (!voice.channelId) {
-    return 'Devi essere in un canale vocale';
-  }
-
-  const Polly = new PollyClient({
-    region: 'eu-central-1',
-  });
-
-  const command = new SynthesizeSpeechCommand({
-    Text: text,
-    OutputFormat: 'ogg_vorbis',
-    VoiceId: 'Giorgio',
-  });
-
-  const response = await Polly.send(command);
-
-  // salva su file i caratteri utilizzati
-  /* fs.readFile("./caratteri.txt", "utf8", async (err, data) => {
-      if (err) return console.log(err);
-
-      var str = args.join(" ").length;
-      console.log("caratteri utilizzati: " + str);
-      var totCaratteri = +str + +data;
-      //console.log(totCaratteri);
-      await fs.writeFile(
-        "./caratteri.txt",
-        totCaratteri.toString(),
-        function (err) {
-          if (err) return console.log(err);
-        }
-      );
-    }); */
-  const data = active.get(voice.guild.id) || {};
-
-  const tts = {
-    songTitle: 'text to speech',
-    requester: author.username,
-    resource: createAudioResource(response.AudioStream),
-    announceChannel: channel.id,
-  };
-
-  initializeConnection(client, voice, data, tts);
-}
-
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('tts')
@@ -102,3 +55,50 @@ module.exports = {
     }
   },
 };
+
+async function body(text, ops) {
+  const { client, voice, author, channel } = ops;
+  const { active } = client;
+  if (!voice.channelId) {
+    return 'Devi essere in un canale vocale';
+  }
+
+  const Polly = new PollyClient({
+    region: 'eu-central-1',
+  });
+
+  const command = new SynthesizeSpeechCommand({
+    Text: text,
+    OutputFormat: 'ogg_vorbis',
+    VoiceId: 'Giorgio',
+  });
+
+  const response = await Polly.send(command);
+
+  // salva su file i caratteri utilizzati
+  /* fs.readFile("./caratteri.txt", "utf8", async (err, data) => {
+      if (err) return console.log(err);
+
+      var str = args.join(" ").length;
+      console.log("caratteri utilizzati: " + str);
+      var totCaratteri = +str + +data;
+      //console.log(totCaratteri);
+      await fs.writeFile(
+        "./caratteri.txt",
+        totCaratteri.toString(),
+        function (err) {
+          if (err) return console.log(err);
+        }
+      );
+    }); */
+  const data = active.get(voice.guild.id) || {};
+
+  const tts = {
+    songTitle: 'text to speech',
+    requester: author.username,
+    resource: createAudioResource(response.AudioStream),
+    announceChannel: channel.id,
+  };
+
+  initializeConnection(client, voice, data, tts);
+}

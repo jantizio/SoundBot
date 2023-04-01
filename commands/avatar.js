@@ -1,11 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
 
-function body(target) {
-  return `${target.username}'s avatar: <${target.displayAvatarURL({
-    dynamic: true,
-  })}>`;
-}
-
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('avatar')
@@ -32,3 +26,9 @@ module.exports = {
     });
   },
 };
+
+function body(target) {
+  return `${target.username}'s avatar: <${target.displayAvatarURL({
+    dynamic: true,
+  })}>`;
+}

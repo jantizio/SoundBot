@@ -1,7 +1,21 @@
 const { SlashCommandBuilder } = require('discord.js');
 const defaultEmbed = require('../lib/defaultEmbed.js');
 
-function body(audioList, jantizio, bot) {
+module.exports = {
+  data: new SlashCommandBuilder()
+    .setName('audio-list')
+    .setDescription('Mostra la lista degli audio disponibili'),
+  aliases: ['al'],
+  async execute(interaction) {
+    await interaction.reply({ embeds: [body(interaction.client)] });
+  },
+  executeOld(message) {
+    return message.channel.send({ embeds: [body(message.client)] });
+  },
+};
+
+function body(client) {
+  const { audioList, jantizio, user: bot } = client;
   const keys = Array.from(audioList.keys());
 
   const nElementi = Math.ceil(keys.length / 3);
@@ -26,18 +40,3 @@ function body(audioList, jantizio, bot) {
 
   return alEmbed;
 }
-
-module.exports = {
-  data: new SlashCommandBuilder()
-    .setName('audio-list')
-    .setDescription('Mostra la lista degli audio disponibili'),
-  aliases: ['al'],
-  async execute(interaction) {
-    const { audioList, jantizio, user: bot } = interaction.client;
-    await interaction.reply({ embeds: [body(audioList, jantizio, bot)] });
-  },
-  executeOld(message) {
-    const { audioList, jantizio, user: bot } = message.client;
-    return message.channel.send({ embeds: [body(audioList, jantizio, bot)] });
-  },
-};

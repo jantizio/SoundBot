@@ -13,7 +13,6 @@ module.exports = {
     } = interaction;
     const channelId = interaction.member.voice.channelId;
 
-    console.log(guildId, channelId);
     const out = body(client, guildId, channelId) ?? 'Addio';
     await interaction.reply({ content: out, ephemeral: true });
   },

@@ -2,10 +2,46 @@ const { SlashCommandBuilder } = require('discord.js');
 const { prefix } = require('../config.json');
 const defaultEmbed = require('../lib/defaultEmbed.js');
 
-function body(commands, jantizio, bot, args) {
+module.exports = {
+  data: new SlashCommandBuilder()
+    .setName('help')
+    .setDescription("Mostra  l'utilizzo di ogni comando")
+    .addStringOption((option) =>
+      option
+        .setName('comando')
+        .setDescription('il comando di cui vuoi informazioni')
+    ),
+  aliases: ['commands'],
+  usage: '<command name>',
+  async execute(interaction) {
+    const comsName = interaction.options.getString('comando');
+
+    const helpEmbed = body(interaction.client, comsName);
+
+    await interaction.reply({
+      content: helpEmbed
+        ? undefined
+        : `il comando \`${comsName}\` comando non esiste!`,
+      embeds: helpEmbed ? [helpEmbed] : undefined,
+      ephemeral: true,
+    });
+  },
+  executeOld(message, args) {
+    const helpEmbed = body(message.client, args[0]);
+
+    if (!helpEmbed) {
+      return message.reply(`il comando \`${args[0]}\` comando non esiste!`);
+    }
+
+    message.channel.send({ embeds: [helpEmbed] });
+  },
+};
+
+function body(client, commandName) {
+  const { commands, jantizio, user: bot } = client;
   const helpEmbed = defaultEmbed(bot, jantizio);
 
-  if (!args.length) {
+  if (!commandName) {
     helpEmbed
       .setDescription(
         'SoundBot ti intrattiene riproducendo suoni divertenti da una soundboard e con la fantastica voce di Giorgio Bot! \n Ecco una lista di comandi:'
@@ -35,10 +71,10 @@ function body(commands, jantizio, bot, args) {
     return helpEmbed;
   }
 
-  const name = args[0].toLowerCase();
+  commandName = commandName.toLowerCase();
   const command =
-    commands.get(name) ||
-    commands.find((c) => c.aliases && c.aliases.includes(name));
+    commands.get(commandName) ||
+    commands.find((c) => c.aliases && c.aliases.includes(commandName));
 
   if (!command) {
     return undefined;
@@ -69,39 +105,3 @@ function body(commands, jantizio, bot, args) {
 
   return helpEmbed;
 }
-
-module.exports = {
-  data: new SlashCommandBuilder()
-    .setName('help')
-    .setDescription("Mostra  l'utilizzo di ogni comando")
-    .addStringOption((option) =>
-      option
-        .setName('comando')
-        .setDescription('il comando di cui vuoi informazioni')
-    ),
-  aliases: ['commands'],
-  usage: '<command name>',
-  async execute(interaction) {
-    const { commands, jantizio, user: bot } = interaction.client;
-    const coms = interaction.options.getString('comando');
-    const args = coms ? [coms] : [];
-    console.log(args);
-
-    const helpEmbed = body(commands, jantizio, bot, args);
-    if (!helpEmbed) {
-      return interaction.reply(`il comando \`${args[0]}\` comando non esiste!`);
-    }
-
-    await interaction.reply({ embeds: [helpEmbed] });
-  },
-  executeOld(message, args) {
-    const { commands, jantizio, user: bot } = message.client;
-
-    const helpEmbed = body(commands, jantizio, bot, args);
-    if (!helpEmbed) {
-      return message.reply(`il comando \`${args[0]}\` comando non esiste!`);
-    }
-
-    message.channel.send({ embeds: [helpEmbed] });
-  },
-};
