@@ -1,21 +1,49 @@
+const { SlashCommandBuilder } = require('discord.js');
+const { getVoiceConnection } = require('@discordjs/voice');
+
 module.exports = {
-  name: 'skip',
-  description: 'Skippa la riproduzione corrente',
+  data: new SlashCommandBuilder()
+    .setName('skip')
+    .setDescription('Skippa la riproduzione corrente'),
   aliases: ['s'],
-  execute(message, args, ops) {
-    const fetched = ops.active.get(message.guild.id);
+  async execute(interaction) {
+    const {
+      client,
+      guild: { id: guildId },
+    } = interaction;
+    const channelId = interaction.member.voice.channelId;
 
-    if (message.member.voice.channel !== message.guild.me.voice.channel) {
-      return message.reply(
-        'Devi essere nello stesso canale del bot per skippare',
-      );
-    }
+    const out = body(client, guildId, channelId) ?? 'Audio skippato';
+    await interaction.reply({ content: out, ephemeral: true });
+  },
+  async executeOld(message) {
+    const {
+      client,
+      guild: { id: guildId },
+    } = message;
+    const channelId = message.member.voice.channelId;
 
-    if (!fetched) return message.reply("Non c'è niente da skippare, coglione");
-
-    ops.active.set(message.guild.id, fetched);
-
-    // message.channel.send("Audio skippato con successo!");
-    return fetched.dispatcher.emit('finish');
+    const out = body(client, guildId, channelId);
+    if (out) message.reply(out);
   },
 };
+
+function body(client, guildId, userChannelId) {
+  const { active } = client;
+  const fetched = active.get(guildId);
+  const connection = getVoiceConnection(guildId);
+
+  if (!connection) {
+    return 'Il bot non è connesso al canale vocale';
+  }
+
+  if (userChannelId !== connection.joinConfig.channelId) {
+    return 'Devi essere nello stesso canale del bot per skippare';
+  }
+
+  if (!fetched || !fetched.dispatcher) {
+    return "Non c'è niente da skippare, coglione";
+  }
+
+  fetched.dispatcher.stop();
+}
