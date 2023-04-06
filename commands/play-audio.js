@@ -1,7 +1,6 @@
 const { SlashCommandBuilder } = require('discord.js');
 const { createAudioResource, StreamType } = require('@discordjs/voice');
 const { initializeConnection } = require('../lib/play.js');
-const path = require('node:path');
 const { createReadStream } = require('node:fs');
 
 module.exports = {
@@ -55,11 +54,10 @@ function body(soundName, ops) {
   }
 
   // salva il percorso del file audio in una variabile
-  let audioPath = audioList.get(soundName);
+  const audioPath = audioList.get(soundName);
   if (!audioPath) {
     return `L'audio \`${soundName}\` non esiste`;
   }
-  audioPath = path.join(__dirname, audioList.get(soundName));
 
   const data = active.get(voice.guild.id) || {};
 
